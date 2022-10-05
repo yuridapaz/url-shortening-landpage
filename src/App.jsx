@@ -21,14 +21,11 @@ function App() {
   const handleSubmit = async (url) => {
     if (checkValidUrl(url)) {
       const shortUrlObj = await shorteningClient.getShorteningLink(url);
-
       checkUrlListItem(shortUrlObj);
-
       setInputValue('');
       setCheckInputValue('');
       return;
     }
-
     setCheckInputValue(true);
   };
 
