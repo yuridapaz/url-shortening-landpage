@@ -42,6 +42,19 @@ const FormContainer = styled.div`
     color: ${({ theme }) => theme.colors.red};
     display: ${(props) => (props.validateUrl ? 'show' : 'none')};
   }
+
+  @media screen and (max-width: 768px) {
+    max-width: 740px;
+    padding: 1.8rem 1.2rem;
+
+    input {
+      padding: 0.3rem 0.6rem;
+    }
+
+    &:after {
+      bottom: 8px;
+    }
+  }
 `;
 
 export const Form = ({ onClick, inputValue, onChange, validateUrl }) => {

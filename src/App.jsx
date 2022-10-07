@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-
 import { useState } from 'react';
 import Theme from './Theme';
 import { BodyContainer, BodyContent, ShorteningLinksContainer } from './App.styled';

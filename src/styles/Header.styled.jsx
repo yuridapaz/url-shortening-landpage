@@ -7,6 +7,14 @@ export const HeaderDiv = styled.header`
   margin: 0 auto;
   margin-top: 1rem;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
+
+  /* @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  } */
 `;
 
 export const LogoDiv = styled.div`
@@ -50,4 +58,7 @@ export const UserDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    width: 210px;
+  }
 `;

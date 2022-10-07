@@ -55,4 +55,11 @@ export const FooterDiv = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .social-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `;

@@ -83,4 +83,51 @@ export const AdvancedStatisticsDiv = styled.div`
       z-index: 1;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    padding-bottom: 2rem;
+
+    .description {
+      .title {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .paragraph {
+        margin: 0 auto;
+        max-width: 500px;
+        font-size: 1rem;
+      }
+    }
+
+    .card-section-div {
+      height: auto;
+      justify-content: space-around;
+
+      .card {
+        padding: 3rem 1rem 1.5rem 1rem;
+
+        .card-title {
+          font-size: 1.15rem;
+        }
+
+        .card-paragraph {
+          font-size: 0.75rem;
+        }
+      }
+
+      .first-card {
+        align-self: auto;
+      }
+
+      .second-card {
+        align-self: auto;
+      }
+
+      .third-card {
+        align-self: auto;
+      }
+    }
+  }
 `;

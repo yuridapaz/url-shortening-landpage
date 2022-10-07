@@ -30,4 +30,48 @@ export const DescriptionDiv = styled.div`
     position: absolute;
     right: -200px;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 350px;
+    padding: 0 1rem;
+    margin-bottom: 6rem;
+
+    .h1-description {
+      font-size: 2.5rem;
+    }
+    .detailed-description {
+      font-size: 0.9rem;
+      max-width: 350px;
+      margin-bottom: 20rem;
+    }
+    .illustrator-img {
+      width: 500px;
+      right: -100px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 0;
+    height: auto;
+    text-align: center;
+
+    .h1-description {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+
+    .detailed-description {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .illustrator-img {
+      right: -10px;
+      position: relative;
+    }
+    .btn-started {
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+  }
 `;

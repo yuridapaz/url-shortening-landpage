@@ -11,6 +11,10 @@ export const BodyContent = styled.div`
   padding-top: 6rem;
   background-color: ${({ theme }) => theme.colors.bgGray};
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 3.5rem;
+  }
 `;
 
 export const ShorteningLinksContainer = styled.ul`
