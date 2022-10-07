@@ -19,7 +19,6 @@ const FormContainer = styled.div`
   transform: translate(-50%, -50%);
   display: flex;
   input {
-    height: 60px;
     flex: 1;
     padding: 0.6rem 1.2rem;
     border-radius: 10px;
@@ -39,6 +38,7 @@ const FormContainer = styled.div`
     position: absolute;
     bottom: 20px;
     font-size: 0.7rem;
+    font-style: italic;
     color: ${({ theme }) => theme.colors.red};
     display: ${(props) => (props.validateUrl ? 'show' : 'none')};
   }
@@ -53,6 +53,30 @@ const FormContainer = styled.div`
 
     &:after {
       bottom: 8px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 85%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 2rem;
+      padding: 0.7rem 1.2rem 0.7rem 0.7rem;
+      font-size: 0.9rem;
+    }
+
+    .submit-form-button {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    &:after {
+      font-size: 0.55rem;
+      bottom: 82px;
     }
   }
 `;

@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const AdvancedStatisticsDiv = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 
   .description {
     text-align: center;
@@ -127,6 +126,44 @@ export const AdvancedStatisticsDiv = styled.div`
 
       .third-card {
         align-self: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 0;
+    .description {
+      width: 85%;
+      margin: 5rem auto;
+
+      .title {
+        font-size: 1.5rem;
+      }
+
+      .paragraph {
+        font-size: 0.9rem;
+      }
+    }
+
+    .card-section-div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        width: 85%;
+        padding: 3rem 2.3rem 2rem 2.3rem;
+        margin-bottom: 4rem;
+        text-align: center;
+
+        .card-icon {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:after {
+        transform: rotate(90deg);
+        width: 600px;
       }
     }
   }
