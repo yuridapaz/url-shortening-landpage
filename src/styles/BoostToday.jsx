@@ -25,6 +25,16 @@ const BoostLinkDiv = styled.div`
     font-weight: 700;
     padding: 0.7rem 1.7rem;
   }
+
+  @media screen and (max-width: 480px) {
+    .title-boost {
+      font-size: 1.4rem;
+    }
+
+    .button-boost {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const BoostToday = () => {
