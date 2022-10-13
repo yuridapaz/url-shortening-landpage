@@ -42,7 +42,6 @@ export const DescriptionDiv = styled.div`
     .detailed-description {
       font-size: 0.9rem;
       max-width: 350px;
-      margin-bottom: 20rem;
     }
     .illustrator-img {
       width: 500px;

@@ -7,6 +7,7 @@ const BoostLinkDiv = styled.div`
   width: 100%;
   height: 250px;
   background-image: url(${bgBoostDesktop});
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: ${({ theme }) => theme.colors.darkViolet};
   display: flex;
@@ -24,6 +25,16 @@ const BoostLinkDiv = styled.div`
     font-size: 1.1rem;
     font-weight: 700;
     padding: 0.7rem 1.7rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    .title-boost {
+      font-size: 1.4rem;
+    }
+
+    .button-boost {
+      font-size: 1rem;
+    }
   }
 `;
 

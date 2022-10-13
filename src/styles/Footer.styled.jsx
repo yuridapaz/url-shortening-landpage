@@ -62,4 +62,41 @@ export const FooterDiv = styled.div`
       align-items: center;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .footer-section {
+      flex-direction: column;
+      text-align: center;
+
+      .title-section {
+        margin-bottom: 2rem;
+      }
+
+      .links-section {
+        flex-direction: column;
+
+        .links-subsection {
+          margin-bottom: 2.2rem;
+
+          .naming {
+            margin-bottom: 0.65rem;
+          }
+
+          .links-list {
+            list-style: none;
+
+            li {
+              .link-anchor {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+      .social-section {
+        flex-direction: row;
+        margin: 0 auto;
+      }
+    }
+  }
 `;
