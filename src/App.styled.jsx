@@ -25,8 +25,9 @@ export const ShorteningLinksContainer = styled.ul`
   @media screen and (max-width: 768px) {
     padding-top: 2rem;
   }
+
   @media screen and (max-width: 480px) {
-    width: 85%;
+    width: 95%;
     padding-top: 2.5rem;
   }
 `;
