@@ -21,5 +21,13 @@ export const ShorteningLinksContainer = styled.ul`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 95%;
+    padding-top: 2.5rem;
+  }
 `;

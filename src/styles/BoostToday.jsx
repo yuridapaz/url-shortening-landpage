@@ -7,6 +7,7 @@ const BoostLinkDiv = styled.div`
   width: 100%;
   height: 250px;
   background-image: url(${bgBoostDesktop});
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: ${({ theme }) => theme.colors.darkViolet};
   display: flex;

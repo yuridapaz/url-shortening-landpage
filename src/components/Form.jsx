@@ -57,7 +57,7 @@ const FormContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    max-width: 85%;
+    width: 85%;
     padding: 1rem;
     display: flex;
     flex-direction: column;

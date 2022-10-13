@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button, RoundedButton } from '../components/Button';
 import { HeaderDiv, LogoDiv, NavDiv, UserDiv } from './Header.styled';
+import { FaBars } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
+import { useState } from 'react';
 
 const Header = () => {
+  const [sideBar, setSideBar] = useState(false);
+
   return (
     <HeaderDiv>
       <LogoDiv>
@@ -13,23 +18,62 @@ const Header = () => {
           />
         </svg>
       </LogoDiv>
-      <NavDiv>
-        <ul>
-          <li>
-            <a href='#'>Features</a>
-          </li>
-          <li>
-            <a href='#'>Pricing</a>
-          </li>
-          <li>
-            <a href='#'>Resources</a>
-          </li>
-        </ul>
-      </NavDiv>
-      <UserDiv>
-        <Button>Login</Button>
-        <RoundedButton>Sign Up</RoundedButton>
-      </UserDiv>
+      <div className='navigation-web'>
+        <NavDiv>
+          <ul>
+            <li>
+              <a href='#'>Features</a>
+            </li>
+            <li>
+              <a href='#'>Pricing</a>
+            </li>
+            <li>
+              <a href='#'>Resources</a>
+            </li>
+          </ul>
+        </NavDiv>
+        <UserDiv>
+          <Button>Login</Button>
+          <RoundedButton>Sign Up</RoundedButton>
+        </UserDiv>
+      </div>
+      <div>
+        <FaBars
+          className='menu-bars'
+          onClick={() => {
+            setSideBar(!sideBar);
+            console.log(sideBar);
+          }}
+        />
+      </div>
+      <div className={sideBar ? 'navigation-mobile active' : 'navigation-mobile'}>
+        <NavDiv>
+          <ul>
+            <li>
+              <AiOutlineClose
+                className='menu-bars active'
+                onClick={() => {
+                  setSideBar(!sideBar);
+                  console.log(sideBar);
+                }}
+              />
+            </li>
+            <li>
+              <a href='#'>Features</a>
+            </li>
+            <li>
+              <a href='#'>Pricing</a>
+            </li>
+            <li>
+              <a href='#'>Resources</a>
+            </li>
+          </ul>
+        </NavDiv>
+        <UserDiv>
+          <Button>Login</Button>
+          <RoundedButton>Sign Up</RoundedButton>
+        </UserDiv>
+      </div>
     </HeaderDiv>
   );
 };
