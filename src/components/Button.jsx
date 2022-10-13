@@ -12,7 +12,7 @@ export const Button = styled.button`
   cursor: pointer;
   transition: 0.2s ease;
   &:hover {
-    color: black;
+    color: ${({ theme }) => theme.colors.veryDarkViolet};
   }
 `;
 
