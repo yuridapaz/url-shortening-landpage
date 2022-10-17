@@ -32,6 +32,44 @@ const ListItem = styled.li`
     border: none;
     border-radius: 5px;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    p {
+      width: 100%;
+      margin-bottom: 0.9rem;
+    }
+
+    span {
+      margin-left: 0;
+      margin-bottom: 0.9rem;
+    }
+
+    button {
+      width: 100%;
+      height: 40px;
+      margin-left: 0;
+    }
+
+    &:after {
+      position: absolute;
+      align-self: center;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: ${({ theme }) => theme.colors.gray};
+      top: 50px;
+    }
+  }
 `;
 
 const ListShorteningItem = ({ fullUrl, shortUrl }) => {
