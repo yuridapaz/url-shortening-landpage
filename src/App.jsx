@@ -61,6 +61,7 @@ function App() {
               return <ListShorteningItem fullUrl={item.original_link} shortUrl={item.short_link} />;
             })}
           </ShorteningLinksContainer>
+          {/* Advanced statistics  */}
           <AdvancedStatistics />
           <BoostToday />
         </BodyContent>
