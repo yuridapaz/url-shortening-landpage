@@ -46,6 +46,7 @@ function App() {
         <Header />
         <Description />
         <BodyContent>
+          {/* Form  */}
           <Form
             onClick={() => handleSubmit(inputValue)}
             inputValue={inputValue}
@@ -54,6 +55,7 @@ function App() {
             }}
             validateUrl={checkInputValue}
           />
+          {/* Container for shorterlinks */}
           <ShorteningLinksContainer>
             {shorteningUrlList.map((item) => {
               return <ListShorteningItem fullUrl={item.original_link} shortUrl={item.short_link} />;
