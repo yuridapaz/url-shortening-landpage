@@ -4,8 +4,11 @@ import { AdvancedStatisticsDiv } from './AdvancedStatistics.styled';
 const AdvancedStatistics = () => {
   return (
     <AdvancedStatisticsDiv>
+      {/* description */}
       <div className='description'>
+        {/* title */}
         <h1 className='title'>Advanced Statistics</h1>
+        {/* paragraph */}
         <p className='paragraph'>
           Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
