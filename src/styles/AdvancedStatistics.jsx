@@ -13,6 +13,7 @@ const AdvancedStatistics = () => {
           Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
       </div>
+      {/* div-card-section */}
       <div className='card-section-div'>
         <div className='card first-card'>
           <span className='card-icon'>
