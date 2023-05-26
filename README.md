@@ -24,7 +24,7 @@ Your users should be able to:
 
 ## Screenshots
 
-![# URL shortening API landing page]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://res.cloudinary.com/dz209s6jk/image/upload/v1572260150/Challenges/tybadwn9wwcc10hug3sn.jpg))
+![URL shortening API landing page](https://res.cloudinary.com/dz209s6jk/image/upload/v1572260150/Challenges/tybadwn9wwcc10hug3sn.jpg)
 
 ## Roadmap:
 
